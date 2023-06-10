@@ -12,7 +12,7 @@
         name: "{{ java_package }}"
         update_cache: yes
         state: present
-     - name: create group
+    - name: create group
       ansible.builtin.group:
         name: "{{ group }}"
         state: present
