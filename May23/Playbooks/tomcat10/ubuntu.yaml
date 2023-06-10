@@ -1,6 +1,7 @@
 ---
 - name: install tomcat
   hosts: tomcat
+  become: yes
   tasks:
     - name: check if the playbook is being executed on supported os
       ansible.builtin.fail:
