@@ -42,7 +42,7 @@
         src: "{{ homedir }}/apache-tomcat-{{ tomcat_version }}"
         dest: "{{ homedir }}/latest"
         state: link
-    notify:
+      notify:
         - Recursively change ownership of a directory
         - Add execute permissions for shell scripts
     - name: Flush handlers
