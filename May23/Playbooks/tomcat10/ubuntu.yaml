@@ -1,6 +1,6 @@
 ---
 - name: install tomcat
-  hosts: ubuntu
+  hosts: tomcat
   tasks:
     - name: check if the playbook is being executed on supported os
       ansible.builtin.fail:
