@@ -13,9 +13,7 @@
       ansible.builtin.yum:
         name: "{{ java_package }}"
         state: present
-    - name: include tasks from ubuntu
-      ansible.builtin.include_tasks:
-        file: ubuntu.yaml
-        apply:
-          tags:
-            -config
+    - name: include tasks from paybook
+      ansible.builtin.import_playbook: ubuntu.yaml
+      tags:
+        - config
