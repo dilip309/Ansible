@@ -11,7 +11,7 @@
         - check
     - name: install java 11
       ansible.builtin.yum:
-        name: "{{ janva_package }}"
+        name: "{{ java_package }}"
         state: present
     - name: include tasks from ubuntu
       ansible.builtin.include_tasks:
