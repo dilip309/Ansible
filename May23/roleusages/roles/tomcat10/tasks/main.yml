@@ -1,4 +1,3 @@
 ---
-# tasks file for generic
 - name: run redhat specific tasks
   ansible.builtin.tasks:
