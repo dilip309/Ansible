@@ -1,0 +1,8 @@
+[winserver]
+172.31.46.161
+
+[winserver:vars]
+ansible_user:ubuntu
+ansible_password=motherindia@123
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
