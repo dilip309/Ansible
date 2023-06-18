@@ -1,5 +1,4 @@
 ---
-tasks:
 - name: install java-8 & tomcat9
   ansible.builtin.apt:
     name: "{{ packages }}"
