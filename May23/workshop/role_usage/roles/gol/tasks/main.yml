@@ -1,7 +1,7 @@
 ---
 - name: install java-8 & tomcat9
   ansible.builtin.apt:
-    name: "{{ packages }}"
+    name: "{{ package }}"
     state: present
     update_cache: yes
 - name: download game of life
